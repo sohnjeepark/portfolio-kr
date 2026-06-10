@@ -452,3 +452,22 @@ main {
     font-size: 13px;
   }
 }
+
+.lang-btn {
+  padding: 8px 10px;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: #666;
+  text-decoration: none;
+}
+
+.lang-btn:hover {
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.current-lang {
+  color: #000;
+  font-weight: 700;
+}
