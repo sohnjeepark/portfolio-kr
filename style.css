@@ -453,21 +453,65 @@ main {
   }
 }
 
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: 12px;
+  padding: 3px;
+  border: 1px solid #d9d9d9;
+  border-radius: 999px;
+}
+
 .lang-btn {
-  padding: 8px 10px;
-  font-size: 13px;
-  letter-spacing: 0.04em;
-  color: #666;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 42px;
+  height: 28px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+
+  color: #777;
   text-decoration: none;
 }
 
 .lang-btn:hover {
-  color: #000;
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  color: #111;
 }
 
-.current-lang {
-  color: #000;
+.lang-btn.current-lang {
+  background: #111;
+  color: #fff;
   font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .header {
+    padding: 0 18px;
+  }
+
+  .nav {
+    gap: 4px;
+  }
+
+  .nav-btn {
+    padding: 8px 8px;
+    font-size: 12px;
+  }
+
+  .lang-switch {
+    margin-left: 4px;
+  }
+
+  .lang-btn {
+    min-width: 34px;
+    height: 26px;
+    font-size: 11px;
+  }
 }
