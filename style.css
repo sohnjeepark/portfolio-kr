@@ -401,3 +401,54 @@ main {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+
+@media (max-width: 700px) {
+  .portfolio-list {
+    padding: 0 24px 50px 24px;
+  }
+
+  .portfolio-item {
+    display: block;
+    padding: 28px 0;
+  }
+
+  .portfolio-thumb {
+    width: 100%;
+    margin-bottom: 22px;
+  }
+
+  .portfolio-description {
+    width: 100%;
+  }
+
+  .portfolio-description h3 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .portfolio-description p {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .project-links {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 430px) {
+  .portfolio-list {
+    padding: 0 18px 44px 18px;
+  }
+
+  .portfolio-description p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .project-links a,
+  .project-link {
+    font-size: 13px;
+  }
+}
